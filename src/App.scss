@@ -1,0 +1,49 @@
+* {
+     margin: 0;
+     padding: 0;
+     outline: 0;
+     box-sizing: border-box;
+     text-decoration: none;
+     border: none;
+     font-family: Helvetica, "sans serif";
+}
+@mixin full-flex($direction) {
+     display: flex;
+     justify-content: center;
+     flex-flow: $direction wrap;
+     align-items: center;
+}
+@mixin img($h) {
+     width: 100% !important;
+     min-height: $h;
+     height: auto;
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+     background-attachment: fixed;
+}
+.img-header {
+     @include img(100vh);
+     background-image: url("images/car.jpg");
+}
+.img-apresenta {
+     @include img(60vh);
+     background-image: url("images/asphalt.jpg");
+}
+.full-center {
+     @include full-flex("column");
+}
+.extra-padding-y {
+     padding: 0 50px;
+}
+.extra-padding-x {
+     padding: 50px 0;
+}
+.Link {
+     text-decoration: none;
+     color: #fff;
+}
+.Link:hover {
+     text-decoration: none;
+     color: #fff;
+}

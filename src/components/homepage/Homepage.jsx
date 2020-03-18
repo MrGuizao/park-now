@@ -9,7 +9,7 @@ export default function Homepage() {
                          Park now
                     </h1>
                     <Link to="/login" className="Link">
-                         <h2 className="bg-dark py-2 px-5 rounded ">Entrar</h2>
+                         <h2 className="py-2 px-5 rounded border">Entrar</h2>
                     </Link>
                </header>
                <h2 className="text-center text-uppercase my-5 py-5">
